@@ -53,7 +53,7 @@
 
   #endif
   
-   /* #if ENABLED(LED2_COLOR_PRESETS)
+    #if ENABLED(LED2_COLOR_PRESETS)
     void menu_led_presets2() {
       START_MENU();
       #if LCD_HEIGHT > 2
@@ -72,7 +72,7 @@
     }
 
   #endif
-*/
+
   void menu_led_custom() {
     START_MENU();
     BACK_ITEM(MSG_LED_CONTROL);
