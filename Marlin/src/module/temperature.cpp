@@ -442,7 +442,7 @@ volatile bool Temperature::raw_temps_ready = false;
     #if ENABLED(PRINTER_EVENT_LEDS)
       const float start_temp = GHV(temp_bed.celsius, temp_hotend[heater].celsius);
       LEDColor color = ONHEATINGSTART();
-    #endif
+      #endif
 
     TERN_(NO_FAN_SLOWING_IN_PID_TUNING, adaptive_fan_slowing = false);
 

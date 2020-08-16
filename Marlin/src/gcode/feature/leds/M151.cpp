@@ -49,10 +49,10 @@
  *   M151 I1 R       ; Set NEOPIXEL index 1 to red
  */
 void GcodeSuite::M151() {
-  #if ENABLED(NEOPIXEL_LED)
+  #if ENABLED(NEOPIXEL2)
     neo2.set_neo_index(parser.intval('I', -1));
   #endif
-  leds.set_color(MakeLEDColor(
+  leds2.set_color(MakeLEDColor2(
     parser.seen('R') ? (parser.has_value() ? parser.value_byte() : 255) : 0,
     parser.seen('U') ? (parser.has_value() ? parser.value_byte() : 255) : 0,
     parser.seen('B') ? (parser.has_value() ? parser.value_byte() : 255) : 0,
