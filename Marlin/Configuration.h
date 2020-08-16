@@ -2396,7 +2396,7 @@
   //#define NEOPIXEL_STARTUP_TEST  // Cycle through colors at startup
   #define NEOPIXEL_IS_SEQUENTIAL   // Sequential display for temperature change - LED by LED. Disable to change all LEDs at once.
 
-// Support for a seperate channel of neopixels
+//Bacon Support for a seperate channel of neopixels
 #define NEOPIXEL2
   #if ENABLED(NEOPIXEL2)
     #define NEOPIXEL2_STARTUP_TEST

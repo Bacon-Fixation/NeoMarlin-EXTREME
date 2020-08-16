@@ -109,7 +109,7 @@ public:
     #endif
   }
 */
-static inline void show() {
+static inline void show() { //Bacon
       adaneo1.show();
       adaneo1.setPin(NEOPIXEL_PIN);  
   }

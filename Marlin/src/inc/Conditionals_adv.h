@@ -249,7 +249,7 @@
   #endif
 #endif
 
-// Set defaults for unspecified LED user colors
+//Bacon Set defaults for unspecified LED2 user colors
 #if ENABLED(LED_CONTROL_MENU)
   #ifndef LED2_USER_PRESET_RED
     #define LED2_USER_PRESET_RED       255

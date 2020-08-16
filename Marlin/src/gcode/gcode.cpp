@@ -556,7 +556,7 @@ void GcodeSuite::process_parsed_command(const bool no_ok/*=false*/) {
         case 150: M150(); break;                                  // M150: Set Status LED Color
       #endif
 
-      #if (NEOPIXELX2)                                                 //Bacon
+      #if NEOPIXELX2                                              //Bacon
         case 151: M151(); break;                                  // M151: Set Seperate LED Color to Neopixel2 pin  
       #endif
 

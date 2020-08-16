@@ -1071,7 +1071,7 @@
       #define LED_USER_PRESET_BRIGHTNESS 255  // User defined intensity
       //#define LED_USER_PRESET_STARTUP       // Have the printer display the user preset color on startup
     #endif
-    #define LED2_COLOR_PRESETS                 // Enable the Second channels Preset Color menu option
+    #define LED2_COLOR_PRESETS                 //Bacon Enable the Second channels Preset Color menu option
     #if ENABLED(LED2_COLOR_PRESETS)
       #define LED2_USER_PRESET_RED        255  // User defined RED value
       #define LED2_USER_PRESET_GREEN      128  // User defined GREEN value
