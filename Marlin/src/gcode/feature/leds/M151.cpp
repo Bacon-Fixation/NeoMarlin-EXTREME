@@ -22,7 +22,7 @@
 
 #include "../../../inc/MarlinConfig.h"
 
-#if ENABLED(NEOPIXEL2) //Bacon
+#if NEOPIXELX2 //Bacon
 
 #include "../../gcode.h"
 #include "../../../feature/leds/leds.h"
@@ -34,8 +34,8 @@
  * Always sets all 3 or 4 components. If a component is left out, set to 0.
  *                                    If brightness is left out, no value changed
  *
- * With NEOPIXEL_LED:
- *  I<index>  Set the Neopixel index to affect. Default: All
+ * With NEOPIXEL2:
+ *  I<index>  Set the Neopixel2 index to affect. Default: All
  *
  * Examples:
  *
@@ -46,7 +46,7 @@
  *   M151 W          ; Turn LED white using a white LED
  *   M151 P127       ; Set LED 50% brightness
  *   M151 P          ; Set LED full brightness
- *   M151 I1 R       ; Set NEOPIXEL index 1 to red
+ *   M151 I1 R       ; Set NEOPIXEL2 index 1 to red
  */
 void GcodeSuite::M151() {
   #if ENABLED(NEOPIXEL2)

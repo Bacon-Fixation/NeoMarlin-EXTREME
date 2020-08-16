@@ -52,7 +52,27 @@
     }
 
   #endif
+  
+   /* #if ENABLED(LED2_COLOR_PRESETS)
+    void menu_led_presets2() {
+      START_MENU();
+      #if LCD_HEIGHT > 2
+        STATIC_ITEM(MSG_LED_PRESETS, SS_CENTER|SS_INVERT);
+      #endif
+      BACK_ITEM(MSG_LED_CONTROL);
+      ACTION_ITEM(MSG_SET_LEDS_WHITE, leds2.set_white);
+      ACTION_ITEM(MSG_SET_LEDS_RED, leds2.set_red);
+      ACTION_ITEM(MSG_SET_LEDS_ORANGE, leds2.set_orange);
+      ACTION_ITEM(MSG_SET_LEDS_YELLOW,leds2.set_yellow);
+      ACTION_ITEM(MSG_SET_LEDS_GREEN, leds2.set_green);
+      ACTION_ITEM(MSG_SET_LEDS_BLUE, leds2.set_blue);
+      ACTION_ITEM(MSG_SET_LEDS_INDIGO, leds2.set_indigo);
+      ACTION_ITEM(MSG_SET_LEDS_VIOLET, leds2.set_violet);
+      END_MENU();
+    }
 
+  #endif
+*/
   void menu_led_custom() {
     START_MENU();
     BACK_ITEM(MSG_LED_CONTROL);

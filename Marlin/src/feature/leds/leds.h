@@ -341,7 +341,7 @@ public:
 
   static void set_color(const LEDColor2 &color
     #if ENABLED(NEOPIXEL2)
-      , bool isSequence=false
+      , bool isSequence2=false
     #endif
   );
 
@@ -353,12 +353,12 @@ public:
       #endif
     #endif
     #if ENABLED(NEOPIXEL2)
-      , bool isSequence=false
+      , bool isSequence2=false
     #endif
   ) {
     set_color(MakeLEDColor2(r, g, b, w, i)
       #if ENABLED(NEOPIXEL2)
-        , isSequence
+        , isSequence2
       #endif
     );
   }
@@ -370,12 +370,12 @@ public:
   #if ENABLED(LED2_COLOR_PRESETS)
     static const LEDColor2 defaultLEDColor2;
     static inline void set_default()  { set_color(defaultLEDColor2); }
-    static inline void set_red()      { set_color(LEDColorRed()); }
-    static inline void set_orange()   { set_color(LEDColorOrange()); }
-    static inline void set_yellow()   { set_color(LEDColorYellow()); }
-    static inline void set_blue()     { set_color(LEDColorBlue()); }
-    static inline void set_indigo()   { set_color(LEDColorIndigo()); }
-    static inline void set_violet()   { set_color(LEDColorViolet()); }
+    static inline void set_red()      { set_color(LEDColorRed2()); }
+    static inline void set_orange()   { set_color(LEDColorOrange2()); }
+    static inline void set_yellow()   { set_color(LEDColorYellow2()); }
+    static inline void set_blue()     { set_color(LEDColorBlue2()); }
+    static inline void set_indigo()   { set_color(LEDColorIndigo2()); }
+    static inline void set_violet()   { set_color(LEDColorViolet2()); }
   #endif
 
  

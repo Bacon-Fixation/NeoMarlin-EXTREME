@@ -165,7 +165,7 @@ void LEDLights::set_color(const LEDColor &incol
 
 
 #if ENABLED(LED2_COLOR_PRESETS)
-  const LEDColor2 LEDLights2::defaultLEDColor = MakeLEDColor2(
+  const LEDColor2 LEDLights2::defaultLEDColor2 = MakeLEDColor2(
     LED2_USER_PRESET_RED,
     LED2_USER_PRESET_GREEN,
     LED2_USER_PRESET_BLUE,
@@ -174,6 +174,10 @@ void LEDLights::set_color(const LEDColor &incol
   );
 #endif
 
+#if EITHER(LED_CONTROL_MENU, PRINTER_EVENT_LEDS)
+  LEDColor2 LEDLights2::color;
+  bool LEDLights2::lights_on;
+#endif
 
 LEDLights2 leds2;
 
