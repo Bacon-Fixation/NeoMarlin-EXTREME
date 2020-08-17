@@ -114,6 +114,7 @@
 
   // Buzz directly via the BEEPER pin tone queue
   #define BUZZ(d,f) buzzer.tone(d, f)
+  //#define MELODY(f,d) buzzer.tone(f, d)
 
 #elif HAS_BUZZER
 

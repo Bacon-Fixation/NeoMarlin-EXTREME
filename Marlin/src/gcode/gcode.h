@@ -698,6 +698,12 @@ private:
 
   TERN_(HAS_USER_THERMISTORS, static void M305());
 
+/*
+  #if ENABLED(MUSIC)
+    static void M330();
+  #endif
+  */
+ 
   #if HAS_MICROSTEPS
     static void M350();
     static void M351();

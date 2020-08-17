@@ -21,7 +21,7 @@
  */
 #pragma once
 
-#define CONFIG_EXAMPLES_DIR "delta/kossel_xl"
+//#define CONFIG_EXAMPLES_DIR "delta/kossel_xl"
 
 /**
  * Configuration.h
@@ -1893,6 +1893,9 @@
 //
 #define SPEAKER
 
+#if ENABLED(SPEAKER)
+  #define MUSIC 
+#endif
 //
 // The duration and frequency for the UI feedback sound.
 // Set these to 0 to disable audio feedback in the LCD menus.
@@ -2397,7 +2400,7 @@
   #define NEOPIXEL_IS_SEQUENTIAL   // Sequential display for temperature change - LED by LED. Disable to change all LEDs at once.
 
 //Bacon Support for a seperate channel of neopixels
-#define NEOPIXEL2
+#define NEOPIXEL2                     // Enable for seperate Neo Pixel Channel
   #if ENABLED(NEOPIXEL2)
     #define NEOPIXEL2_TYPE NEO_GRB    // NEO_GRBW / NEO_GRB - four/three channel driver type (defined in Adafruit_NeoPixel.h)
     #define NEOPIXEL2_PIN    P1_26    // LED2 driving pin
