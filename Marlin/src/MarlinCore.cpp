@@ -976,7 +976,9 @@ void setup() {
   #if HAS_COLOR_LEDS
     SETUP_RUN(leds.setup());
   #endif
-
+  #if NEOPIXELX2
+    SETUP_RUN(leds2.setup());
+    #endif
   #if ENABLED(USE_CONTROLLER_FAN)     // Set up fan controller to initialize also the default configurations.
     SETUP_RUN(controllerFan.setup());
   #endif

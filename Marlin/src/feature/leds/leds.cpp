@@ -195,27 +195,17 @@ void LEDLights2::setup() {
   TERN_(LED2_USER_PRESET_STARTUP, set_default());
 }
 
-void LEDLights2::set_color(const LEDColor2 &incol
-  #if ENABLED(NEOPIXEL2)
-    , bool isSequence2/*=false*/
-  #endif
-  ) {
+void LEDLights2::set_color(const LEDColor2 &incol) {
 
   #if ENABLED(NEOPIXEL2)
 
     const uint32_t neocolor2 = LEDColorWhite2() == incol
                             ? neo2.Color(NEO_WHITE)
                             : neo2.Color(incol.r, incol.g, incol.b, incol.w);
-    static uint16_t nextLed2 = 0;
-
+    
        neo2.set_brightness(incol.i);
 
-    if (isSequence2) {
-      neo2.set_pixel_color(nextLed2, neocolor2);
-      neo2.show();
-      if (++nextLed2 >= neo2.pixels()) nextLed2 = 0;
-      return;
-    }
+    
 
     neo2.set_color(neocolor2);}
 

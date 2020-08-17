@@ -340,9 +340,7 @@ public:
   static void setup(); // init()
 
   static void set_color(const LEDColor2 &color
-    #if ENABLED(NEOPIXEL2)
-      , bool isSequence2=false
-    #endif
+
   );
 
   inline void set_color(uint8_t r, uint8_t g, uint8_t b
@@ -352,14 +350,10 @@ public:
         , uint8_t i=NEOPIXEL2_BRIGHTNESS
       #endif
     #endif
-    #if ENABLED(NEOPIXEL2)
-      , bool isSequence2=false
-    #endif
+
   ) {
     set_color(MakeLEDColor2(r, g, b, w, i)
-      #if ENABLED(NEOPIXEL2)
-        , isSequence2
-      #endif
+
     );
   }
 

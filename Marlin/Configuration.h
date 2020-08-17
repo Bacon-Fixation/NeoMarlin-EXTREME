@@ -490,7 +490,7 @@
                                   // Set/get with gcode: M301 E[extruder number, 0-2]
 
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
-  // oXis Kossel k800 XL
+  // E3D V6 30mm Fan
   #define DEFAULT_Kp 40.28 
   #define DEFAULT_Ki 5.04
   #define DEFAULT_Kd 80.44
@@ -651,7 +651,7 @@
 
   #if ENABLED(DELTA_AUTO_CALIBRATION)
     // set the default number of probe points : n*n (1 -> 7)
-    #define DELTA_CALIBRATION_DEFAULT_POINTS 4
+    #define DELTA_CALIBRATION_DEFAULT_POINTS 4.0
   #endif
 
   #if EITHER(DELTA_AUTO_CALIBRATION, DELTA_CALIBRATION_MENU)
@@ -1022,8 +1022,8 @@
 
 // Duet Smart Effector (for delta printers) - https://bit.ly/2ul5U7J
 // When the pin is defined you can use M672 to set/reset the probe sensivity.
-//#define DUET_SMART_EFFECTOR
-#if ENABLED(DUET_SMART_EFFECTOR)
+//#define SMART_EFFECTOR
+#if ENABLED(SMART_EFFECTOR)
   #define SMART_EFFECTOR_MOD_PIN  -1  // Connect a GPIO pin to the Smart Effector MOD pin
 #endif
 
@@ -1453,12 +1453,12 @@
  * Add a bed leveling sub-menu for ABL or MBL.
  * Include a guided procedure if manual probing is enabled.
  */
-//#define LCD_BED_LEVELING
+#define LCD_BED_LEVELING
 
 #if ENABLED(LCD_BED_LEVELING)
   #define MESH_EDIT_Z_STEP  0.025 // (mm) Step size while manually probing Z axis.
   #define LCD_PROBE_Z_RANGE 4     // (mm) Z Range centered on Z_MIN_POS for LCD Z adjustment
-  //#define MESH_EDIT_MENU        // Add a menu to edit mesh points
+  #define MESH_EDIT_MENU        // Add a menu to edit mesh points
 #endif
 
 // Add a menu item to move between bed corners for manual bed adjustment
@@ -1820,7 +1820,7 @@
  *
  * Use CRC checks and retries on the SD communication.
  */
-//#define SD_CHECK_AND_RETRY
+#define SD_CHECK_AND_RETRY
 
 /**
  * LCD Menu Items
@@ -2399,11 +2399,11 @@
 //Bacon Support for a seperate channel of neopixels
 #define NEOPIXEL2
   #if ENABLED(NEOPIXEL2)
-    #define NEOPIXEL2_STARTUP_TEST
-    #define NEOPIXEL2_TYPE NEO_GRB
-    #define NEOPIXEL2_PIN    P1_26
+    #define NEOPIXEL2_TYPE NEO_GRB    // NEO_GRBW / NEO_GRB - four/three channel driver type (defined in Adafruit_NeoPixel.h)
+    #define NEOPIXEL2_PIN    P1_26    // LED2 driving pin
     #define NEOPIXEL2_PIXELS 12       // Number of LEDs in the second strip, larger of 2 strips if 2 neopixel strips are used
     #define NEOPIXEL2_BRIGHTNESS 127  // Initial brightness (0-255)
+    #define NEOPIXEL2_STARTUP_TEST    // Cycle through colors at startup on the seperate channel
   #endif
 
 
