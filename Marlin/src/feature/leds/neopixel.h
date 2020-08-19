@@ -82,34 +82,18 @@ public:
 
   static inline void begin() {
     adaneo1.begin();
-    //TERN_(MULTIPLE_NEOPIXEL_TYPES, adaneo2.begin());
   }
 
   static inline void set_pixel_color(const uint16_t n, const uint32_t c) {
     adaneo1.setPixelColor(n, c);
-    //TERN_(MULTIPLE_NEOPIXEL_TYPES, adaneo2.setPixelColor(n, c));
   }
 
   static inline void set_brightness(const uint8_t b) {
     adaneo1.setBrightness(b);
-    //TERN_(MULTIPLE_NEOPIXEL_TYPES, adaneo2.setBrightness(b));
   }
 
-  /* //Bacon
-  static inline void show() {
-    adaneo1.show();
-    #if PIN_EXISTS(NEOPIXEL2)
-      #if MULTIPLE_NEOPIXEL_TYPES
-        adaneo2.show();
-      #else
-         adaneo1.setPin(NEOPIXEL2_PIN);
-        adaneo1.show();
-        adaneo1.setPin(NEOPIXEL_PIN);
-      #endif
-    #endif
-  }
-*/
-static inline void show() { //Bacon
+
+static inline void show() { 
       adaneo1.show();
       adaneo1.setPin(NEOPIXEL_PIN);  
   }
@@ -128,7 +112,7 @@ static inline void show() { //Bacon
 extern Marlin_NeoPixel neo;
 
 
-//Bacon Neo pixel channel 2 
+// Neo pixel channel 2 
 
 class Marlin_NeoPixel2 {
 private:

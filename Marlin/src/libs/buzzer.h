@@ -100,8 +100,8 @@
        * @param frequency Frequency of the tone in hertz
        */
       static void tone(const uint16_t duration, const uint16_t frequency=0);
-
-      /**
+     
+       /**
        * @brief Tick function
        * @details This function should be called at loop, it will take care of
        *          playing the tones in the queue.
@@ -114,7 +114,6 @@
 
   // Buzz directly via the BEEPER pin tone queue
   #define BUZZ(d,f) buzzer.tone(d, f)
-  //#define MELODY(f,d) buzzer.tone(f, d)
 
 #elif HAS_BUZZER
 

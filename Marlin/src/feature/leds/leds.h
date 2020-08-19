@@ -217,7 +217,7 @@ public:
 
 extern LEDLights leds;
 
-//Bacon LED2 setup
+//LED2 setup
 #if NEOPIXELX2
   #include "neopixel.h"
 #endif
@@ -228,7 +228,7 @@ extern LEDLights leds;
 #endif
 
 /**
- * LEDcolor type for use with leds.set_color
+ * LEDcolor2 type for use with leds2.set_color
  */
 typedef struct LEDColor2 {
   uint8_t r, g, b
@@ -302,7 +302,7 @@ typedef struct LEDColor2 {
 } LEDColor2;
 
 /**
- * Color helpers and presets
+ * Color helpers and presets for second neopixel channel
  */
 #if HAS_WHITE_LED
   #if ENABLED(NEOPIXEL2)

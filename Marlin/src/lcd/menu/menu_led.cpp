@@ -53,7 +53,7 @@
 
   #endif
   
-    #if ENABLED(LED2_COLOR_PRESETS) //Bacon
+    #if ENABLED(LED2_COLOR_PRESETS) 
     void menu_led_presets2() {
       START_MENU();
       #if LCD_HEIGHT > 2

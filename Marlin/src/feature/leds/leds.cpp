@@ -161,7 +161,7 @@ void LEDLights::set_color(const LEDColor &incol
 
 #endif
 
-#if (NEOPIXELX2) //Bacon
+#if (NEOPIXELX2) 
 
 
 #if ENABLED(LED2_COLOR_PRESETS)
@@ -213,5 +213,5 @@ void LEDLights2::set_color(const LEDColor2 &incol) {
 
 
 
-#endif //Bacon NeoPixelX2
+  #endif //NeoPixelX2
 #endif  //HAS_LEDS

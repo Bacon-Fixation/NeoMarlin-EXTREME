@@ -22,7 +22,7 @@
 
 #include "../../../inc/MarlinConfig.h"
 
-#if NEOPIXELX2 //Bacon
+#if NEOPIXELX2 
 
 #include "../../gcode.h"
 #include "../../../feature/leds/leds.h"

@@ -249,7 +249,7 @@
   #endif
 #endif
 
-//Bacon Set defaults for unspecified LED2 user colors
+//Set defaults for unspecified LED2 user colors
 #if ENABLED(LED_CONTROL_MENU , NEOPIXELX2)
   #ifndef LED2_USER_PRESET_RED
     #define LED2_USER_PRESET_RED       255

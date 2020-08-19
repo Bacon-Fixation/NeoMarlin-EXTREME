@@ -556,7 +556,7 @@ void GcodeSuite::process_parsed_command(const bool no_ok/*=false*/) {
         case 150: M150(); break;                                  // M150: Set Status LED Color
       #endif
 
-      #if NEOPIXELX2                                              //Bacon
+      #if NEOPIXELX2                                              
         case 151: M151(); break;                                  // M151: Set Seperate LED Color to Neopixel2 pin  
       #endif
 
@@ -666,11 +666,11 @@ void GcodeSuite::process_parsed_command(const bool no_ok/*=false*/) {
       #if HAS_USER_THERMISTORS
         case 305: M305(); break;                                  // M305: Set user thermistor parameters
       #endif
-      /*
+      
       #if ENABLED(MUSIC)
         case 330: M330(); break;                                  // M330: Play a little ditty
       #endif
-     */
+     
 
       #if ENABLED(REPETIER_GCODE_M360)
         case 360: M360(); break;                                  // M360: Firmware settings

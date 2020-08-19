@@ -119,8 +119,7 @@ bool Marlin_NeoPixel::set_led_color(const uint8_t r, const uint8_t g, const uint
   #endif
 }
 #endif
-
-//Bacon seperate neo channel 
+#endif // NEOPIXEL_LED seperate neo channel 
 #if NEOPIXELX2
   Marlin_NeoPixel2 neo2;
   int8_t Marlin_NeoPixel2::neoindex2;
@@ -169,6 +168,5 @@ void Marlin_NeoPixel2::init() {
   #endif
 }
 
-#endif
+#endif  // NEOPIXELX2
 
-#endif // NEOPIXELX2
