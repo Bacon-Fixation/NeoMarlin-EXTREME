@@ -9,10 +9,11 @@
 Original Source
 Additional documentation can be found at the [Marlin Home Page](https://marlinfw.org/).
 Please test this firmware and let us know if it misbehaves in any way. Volunteers are standing by!
+This is a modified version of Marlin 2.0.6 that allows the Neopixel2 pin to be independently controlled with a M151 command
 
 ## Marlin 2.0 Prototype NeoMarlin-EXTREME Branch
 
-__Not for production use. Use with caution! and with NEOPIXELS__
+__Not for production use. Use with caution! and use with NEOPIXELS!!!__
 
 To build Marlin 2.0 you'll need [Arduino IDE 1.8.8 or newer](https://www.arduino.cc/en/main/software) or [PlatformIO](http://docs.platformio.org/en/latest/ide.html#platformio-ide). We've posted detailed instructions on [Building Marlin with Arduino](https://marlinfw.org/docs/basics/install_arduino.html) and [Building Marlin with PlatformIO for ReArm](https://marlinfw.org/docs/basics/install_rearm.html) (which applies well to other 32-bit boards).
 
@@ -23,7 +24,7 @@ To build Marlin 2.0 you'll need [Arduino IDE 1.8.8 or newer](https://www.arduino
  - Bob Kuhn [[@Bob-the-Kuhn](https://github.com/Bob-the-Kuhn)] - USA
  - João Brazio [[@jbrazio](https://github.com/jbrazio)] - Portugal
  - Erik van der Zalm [[@ErikZalm](https://github.com/ErikZalm)] - Netherlands &nbsp; [![Flattr Erik](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=ErikZalm&url=https://github.com/MarlinFirmware/Marlin&title=Marlin&language=&tags=github&category=software)
- - Bacon the idiot that Edited this version - From the great territory of the Bacon aisle 
+ - Bacon Fixation [[@Bacon-Fixation](https://github.com/Bacon-Fixation)] - USA <----- NOOB GUY
 ## License
 
 Marlin is published under the [GPL license](/LICENSE) because we believe in open development. The GPL comes with both rights and obligations. Whether you use Marlin firmware as the driver for your open or closed-source product, you must keep Marlin open, and you must provide your compatible Marlin source code to end users upon request. The most straightforward way to comply with the Marlin license is to make a fork of Marlin on Github, perform your modifications, and direct users to your modified fork.
