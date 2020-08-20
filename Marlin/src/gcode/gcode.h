@@ -622,7 +622,7 @@ private:
   TERN_(TEMPERATURE_UNITS_SUPPORT, static void M149());
 
   TERN_(HAS_COLOR_LEDS, static void M150());
-  TERN_(NEOPIXEL2, static void M151());  
+  TERN_(NEOPIXELX2, static void M151());  
 
   #if BOTH(AUTO_REPORT_TEMPERATURES, HAS_TEMP_SENSOR)
     static void M155();
