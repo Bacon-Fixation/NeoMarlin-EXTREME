@@ -326,9 +326,6 @@
 #ifndef NEOPIXEL_PIN
   #define NEOPIXEL_PIN                     P1_24
 #endif
-#ifndef NEOPIXEL2_PIN
-  #define NEOPIXEL2_PIN                     NEOPIXEL2_PIN
-#endif
 
 /**
  * Special pins

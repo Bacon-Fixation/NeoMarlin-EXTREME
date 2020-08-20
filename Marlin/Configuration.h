@@ -2397,7 +2397,7 @@
   #define NEOPIXEL_IS_SEQUENTIAL   // Sequential display for temperature change - LED by LED. Disable to change all LEDs at once.
 
 //Support for a seperate channel of neopixels
-#define NEOPIXEL2                     // Enable for seperate Neo Pixel Channel
+//#define NEOPIXEL2                     // Enable for seperate Neo Pixel Channel
   #if ENABLED(NEOPIXEL2)
     #define NEOPIXEL2_TYPE NEO_GRB    // NEO_GRBW / NEO_GRB - four/three channel driver type (defined in Adafruit_NeoPixel.h)
     #define NEOPIXEL2_PIN    P1_26    // LED2 driving pin
