@@ -38,9 +38,6 @@
 // Defines
 // ------------------------
 
-#if defined(NEOPIXEL2_TYPE) && NEOPIXEL2_TYPE != NEOPIXEL_TYPE
-  #define MULTIPLE_NEOPIXEL_TYPES 1
-#endif
 
 #if NEOPIXEL_TYPE == NEO_RGB || NEOPIXEL_TYPE == NEO_RBG || NEOPIXEL_TYPE == NEO_GRB || NEOPIXEL_TYPE == NEO_GBR || NEOPIXEL_TYPE == NEO_BRG || NEOPIXEL_TYPE == NEO_BGR || NEOPIXEL2_TYPE == NEO_RGB || NEOPIXEL2_TYPE == NEO_RBG || NEOPIXEL2_TYPE == NEO_GRB || NEOPIXEL2_TYPE == NEO_GBR || NEOPIXEL2_TYPE == NEO_BRG || NEOPIXEL2_TYPE == NEO_BGR
   #define NEOPIXEL_IS_RGB 1
@@ -60,11 +57,7 @@
 
 class Marlin_NeoPixel {
 private:
-  static Adafruit_NeoPixel adaneo1
-    #if MULTIPLE_NEOPIXEL_TYPES
-      , adaneo2
-    #endif
-  ;
+  static Adafruit_NeoPixel adaneo1;
   static int8_t neoindex;
 
 public:
