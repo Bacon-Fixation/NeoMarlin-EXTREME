@@ -13,7 +13,7 @@ This is a modified version of Marlin 2.0.6 that allows the Neopixel2 pin to be i
 
 ## Marlin 2.0 Prototype NeoMarlin-EXTREME Branch
 
-__Not for production use. Use with caution! and use with NEOPIXELS!!!__
+__Not for production use. Use with caution! and Use with more NEOPIXELS!!!__
 
 To build Marlin 2.0 you'll need [Arduino IDE 1.8.8 or newer](https://www.arduino.cc/en/main/software) or [PlatformIO](http://docs.platformio.org/en/latest/ide.html#platformio-ide). We've posted detailed instructions on [Building Marlin with Arduino](https://marlinfw.org/docs/basics/install_arduino.html) and [Building Marlin with PlatformIO for ReArm](https://marlinfw.org/docs/basics/install_rearm.html) (which applies well to other 32-bit boards).
 
