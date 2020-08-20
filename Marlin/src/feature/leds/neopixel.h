@@ -113,7 +113,7 @@ extern Marlin_NeoPixel neo;
 
 
 // Neo pixel channel 2 
-
+#if NEOPIXELX2
 class Marlin_NeoPixel2 {
 private:
   static Adafruit_NeoPixel adaneo2;
@@ -162,3 +162,4 @@ static inline void show() {
 };
 
 extern Marlin_NeoPixel2 neo2;
+#endif
