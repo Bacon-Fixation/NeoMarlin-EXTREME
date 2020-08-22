@@ -216,6 +216,7 @@ public:
 };
 
 extern LEDLights leds;
+#if NEOPIXELX2
 
 //LED2 setup
 #if NEOPIXELX2
@@ -387,3 +388,4 @@ public:
 };
 
 extern LEDLights2 leds2;
+#endif  
