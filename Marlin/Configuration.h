@@ -2400,11 +2400,11 @@
   //#define NEOPIXEL_BKGD_LED_INDEX  0               // Index of the LED to use
   //#define NEOPIXEL_BKGD_COLOR { 255, 255, 255, 0 } // R, G, B, W
 
-  // Support for second Adafruit Neopixel LED driver that is controlled with M151
+// Support for second Adafruit Neopixel LED driver that is controlled with M151
   #define NEOPIXEL2
   #if ENABLED(NEOPIXEL2)
-    #define NEOPIXEL2_TYPE NEO_GRBW    // NEO_GRBW / NEO_GRB - four/three channel driver type (defined in Adafruit_NeoPixel.h)
-    #define NEOPIXEL2_PIN    P1_26    // LED2 driving pin
+    #define NEOPIXEL2_TYPE NEO_GRB    // NEO_GRBW / NEO_GRB - four/three channel driver type (defined in Adafruit_NeoPixel.h)
+    #define NEOPIXEL2_PIN    P1_26    // NEO2 driving pin
     #define NEOPIXEL2_PIXELS 12       // Number of LEDs in the second strip, larger of 2 strips if 2 neopixel strips are used
     #define NEOPIXEL2_BRIGHTNESS 127  // Initial brightness (0-255)
     //#define NEOPIXEL2_STARTUP_TEST  // Cycle through colors at startup on the seperate channel

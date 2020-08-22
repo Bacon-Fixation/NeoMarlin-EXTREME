@@ -160,8 +160,8 @@ void Marlin_NeoPixel2::init() {
   #endif
 
   
-  #if ENABLED(LED2_USER_PRESET_STARTUP)
-    set_color(adaneo2.Color(LED2_USER_PRESET_RED, LED2_USER_PRESET_GREEN, LED2_USER_PRESET_BLUE, LED2_USER_PRESET_WHITE));
+  #if ENABLED(NEO2_USER_PRESET_STARTUP)
+    set_color(adaneo2.Color(NEO2_USER_PRESET_RED, NEO2_USER_PRESET_GREEN, NEO2_USER_PRESET_BLUE, NEO2_USER_PRESET_WHITE));
   #else
     set_color(adaneo2.Color(0, 0, 0, 0));
   #endif

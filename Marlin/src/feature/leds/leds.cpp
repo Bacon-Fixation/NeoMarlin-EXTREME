@@ -164,13 +164,13 @@ void LEDLights::set_color(const LEDColor &incol
 #if (NEOPIXELX2) 
 
 
-#if ENABLED(LED2_COLOR_PRESETS)
+#if ENABLED(NEO2_COLOR_PRESETS)
   const LEDColor2 LEDLights2::defaultLEDColor2 = MakeLEDColor2(
-    LED2_USER_PRESET_RED,
-    LED2_USER_PRESET_GREEN,
-    LED2_USER_PRESET_BLUE,
-    LED2_USER_PRESET_WHITE,
-    LED2_USER_PRESET_BRIGHTNESS
+    NEO2_USER_PRESET_RED,
+    NEO2_USER_PRESET_GREEN,
+    NEO2_USER_PRESET_BLUE,
+    NEO2_USER_PRESET_WHITE,
+    NEO2_USER_PRESET_BRIGHTNESS
   );
 #endif
 
@@ -191,8 +191,7 @@ void LEDLights2::setup() {
     #endif
   #endif
   TERN_(NEOPIXEL2, neo2.init());
-  TERN_(PCA9533, PCA9533_init());
-  TERN_(LED2_USER_PRESET_STARTUP, set_default());
+  TERN_(NEO2_USER_PRESET_STARTUP, set_default());
 }
 
 void LEDLights2::set_color(const LEDColor2 &incol) {

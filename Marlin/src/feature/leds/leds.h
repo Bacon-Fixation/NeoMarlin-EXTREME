@@ -218,7 +218,7 @@ public:
 extern LEDLights leds;
 #if NEOPIXELX2
 
-//LED2 setup
+//NEO2 setup
 #if NEOPIXELX2
   #include "neopixel.h"
 #endif
@@ -362,7 +362,7 @@ public:
   static inline void set_green() { set_color(LEDColorGreen2()); }
   static inline void set_white() { set_color(LEDColorWhite2()); }
 
-  #if ENABLED(LED2_COLOR_PRESETS)
+  #if ENABLED(NEO2_COLOR_PRESETS)
     static const LEDColor2 defaultLEDColor2;
     static inline void set_default()  { set_color(defaultLEDColor2); }
     static inline void set_red()      { set_color(LEDColorRed2()); }
