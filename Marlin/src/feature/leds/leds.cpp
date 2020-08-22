@@ -174,7 +174,7 @@ void LEDLights::set_color(const LEDColor &incol
   );
 #endif
 
-#if EITHER(LED_CONTROL_MENU, PRINTER_EVENT_LEDS)
+#if ENABLED(LED_CONTROL_MENU)
   LEDColor2 LEDLights2::color;
   bool LEDLights2::lights_on;
 #endif
