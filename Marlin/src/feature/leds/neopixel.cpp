@@ -118,7 +118,6 @@ bool Marlin_NeoPixel::set_led_color(const uint8_t r, const uint8_t g, const uint
   #endif
 }
 #endif
-#endif // NEOPIXEL_LED
 
 #if NEOPIXELX2
   Marlin_NeoPixel2 neo2;
@@ -169,3 +168,4 @@ void Marlin_NeoPixel2::init() {
 }
 #endif  // NEOPIXELX2
 
+#endif // NEOPIXEL_LED

@@ -146,7 +146,7 @@ static inline void show() {
     bool set_led_color(const uint8_t r, const uint8_t g, const uint8_t b, const uint8_t w, const uint8_t p);
   #endif
 
-  // Accessors for
+  // Accessors for NEOPIXELX2
   static inline uint16_t pixels() { return adaneo2.numPixels();}
   static inline uint8_t brightness() { return adaneo2.getBrightness(); }
   static inline uint32_t Color(uint8_t r, uint8_t g, uint8_t b, uint8_t w) {
@@ -155,4 +155,4 @@ static inline void show() {
 };
 
 extern Marlin_NeoPixel2 neo2;
-#endif
+#endif //NEOPIXELX2
