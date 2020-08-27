@@ -9,7 +9,7 @@
 Original Source
 Additional documentation can be found at the [Marlin Home Page](https://marlinfw.org/).
 Please test this firmware and let us know if it misbehaves in any way. Volunteers are standing by!
-This is a modified version of Marlin 2.0.6 that allows the Neopixel2 pin to be independently controlled with a M151 command
+This is a modified version of Marlin 2.0.6 that allows the Neopixel2 pin to be independently controlled with a M150 Sn command
 
 ## Marlin 2.0 Prototype NeoMarlin-EXTREME Branch
 
