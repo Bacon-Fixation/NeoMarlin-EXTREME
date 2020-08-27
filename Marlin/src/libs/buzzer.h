@@ -16,7 +16,7 @@
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  *
  */
 #pragma once
@@ -100,8 +100,8 @@
        * @param frequency Frequency of the tone in hertz
        */
       static void tone(const uint16_t duration, const uint16_t frequency=0);
-     
-       /**
+
+      /**
        * @brief Tick function
        * @details This function should be called at loop, it will take care of
        *          playing the tones in the queue.

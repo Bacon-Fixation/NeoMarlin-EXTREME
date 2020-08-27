@@ -16,7 +16,7 @@
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  *
  */
 #pragma once
@@ -92,7 +92,7 @@
 //
 #define HEATER_0_PIN                        PG12  // HEATER1
 #define HEATER_BED_PIN                      PG11  // HOT BED
-#define HEATER_BED_INVERTING true
+#define HEATER_BED_INVERTING                true
 
 //
 // Fans
@@ -129,7 +129,7 @@
 #define FSMC_DMA_DEV                        DMA2
 #define FSMC_DMA_CHANNEL                 DMA_CH5
 
-#if ENABLED(TOUCH_BUTTONS)
+#if NEED_TOUCH_PINS
   #define TOUCH_CS_PIN                      PB7   // SPI2_NSS
   #define TOUCH_SCK_PIN                     PA5   // SPI2_SCK
   #define TOUCH_MISO_PIN                    PA6   // SPI2_MISO

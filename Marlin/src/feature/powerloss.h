@@ -16,13 +16,13 @@
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  *
  */
 #pragma once
 
 /**
- * power_loss_recovery.h - Resume an SD print after power-loss
+ * feature/powerloss.h - Resume an SD print after power-loss
  */
 
 #include "../sd/cardreader.h"
