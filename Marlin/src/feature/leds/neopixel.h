@@ -112,7 +112,7 @@ public:
       #else
       #if DISABLED(NEOPIXEL2_SEPARATE)
         adaneo1.setPin(NEOPIXEL2_PIN);
-        #endif
+      #endif
         adaneo1.show();
         adaneo1.setPin(NEOPIXEL_PIN);
       #endif
