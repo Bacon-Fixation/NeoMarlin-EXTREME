@@ -25,7 +25,8 @@
 #if BOTH(MELODY, SPEAKER)
 
 #include "../gcode.h"
-
+#include "../../lcd/ultralcd.h" // i2c-based BUZZ
+#include "../../libs/buzzer.h"  // Buzzer, if possible
 #include "../../feature/melody/melody_player.h" 
 
 /**
@@ -34,15 +35,19 @@
 
 void GcodeSuite::M330() {
 
+    Melody();
     // we only play the note for 90% of the duration, leaving 10% as a pause
-    tone2(buzzer2, pgm_read_word_near(melody+thisNote ), noteDuration * 0.9);
+    tone2(music_maker, pgm_read_word_near(melody+thisNote ), noteDuration * 0.9);
+        Melody();
+        
 
     // Wait for the specified duration before playing the next note.
     delay2(noteDuration);
 
     // stop the waveform generation before the next note.
-    noTone(buzzer2);
-
+    noTone(music_maker);
+    
+    end_loop(); 
 
 }
 
