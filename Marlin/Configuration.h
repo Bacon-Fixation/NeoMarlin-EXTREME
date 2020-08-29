@@ -1895,6 +1895,13 @@
 //
 #define SPEAKER
 
+
+//
+// If you have a speaker that is capable of changeing the frequency.
+// Have the speaker play a song
+//
+#define MELODY
+
 //
 // The duration and frequency for the UI feedback sound.
 // Set these to 0 to disable audio feedback in the LCD menus.
