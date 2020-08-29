@@ -1900,7 +1900,7 @@
 // If you have a speaker that is capable of changeing the frequency.
 // Have the speaker play a song
 //
-#define MELODY
+//#define MELODY
 
 //
 // The duration and frequency for the UI feedback sound.
