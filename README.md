@@ -9,7 +9,7 @@
 Original Source
 Additional documentation can be found at the [Marlin Home Page](https://marlinfw.org/).
 Please test this firmware and let us know if it misbehaves in any way. Volunteers are standing by!
-This is a modified version of Marlin 2.0.6 that allows the Neopixel2 pin to be independently controlled with a M150 Sn command. Also allows a PWM speaker play music from a song.h file with the use of a M330 command <--- this is most likly the most usless feature to add
+This is a modified version of Marlin 2.0.6.1 that allows the NEOPIXEL2_PIN to be independently controlled with a M150 Sn command. Also allows a PWM speaker play music from a song.h file with the use of a M330 command <--- this is most likly the most usless feature to add
 
 ## Marlin 2.0 Prototype NeoMarlin-EXTREME Branch that added music
 
