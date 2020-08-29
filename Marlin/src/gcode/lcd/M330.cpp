@@ -22,27 +22,27 @@
 
 #include "../../inc/MarlinConfig.h"
 
-#if ENABLED(MELODY) && USE_BEEPER
+#if BOTH(MELODY, SPEAKER)
 
 #include "../gcode.h"
-#include "../../lcd/ultralcd.h" // i2c-based BUZZ
-#include "../../feature/melody/melody_player.h" 
-#include "../../feature/melody/song.h"  
-/**
- * M330: Play a little ditty
- */
- 
-void GcodeSuite::M330() {
- 
-    // we only play the note for 90% of the duration, leaving 10% as a pause
-    tone(buzzer2, pgm_read_word_near(melody+thisNote ), noteDuration * 0.9);
 
-    // Wait for the specief duration before playing the next note.
-    delay(noteDuration);
+#include "../../feature/melody/melody_player.h" 
+
+/**
+* M330: Play the song.h
+*/
+
+void GcodeSuite::M330() {
+
+    // we only play the note for 90% of the duration, leaving 10% as a pause
+    tone2(buzzer2, pgm_read_word_near(melody+thisNote ), noteDuration * 0.9);
+
+    // Wait for the specified duration before playing the next note.
+    delay2(noteDuration);
 
     // stop the waveform generation before the next note.
     noTone(buzzer2);
-    
+
 
 }
 

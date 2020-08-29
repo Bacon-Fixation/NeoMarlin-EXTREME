@@ -1895,7 +1895,6 @@
 //
 #define SPEAKER
 
-
 //
 // If you have a speaker that is capable of changeing the frequency.
 // Have the speaker play a song
