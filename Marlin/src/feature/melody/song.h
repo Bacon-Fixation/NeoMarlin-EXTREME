@@ -21,7 +21,6 @@
  */
 #pragma once
 
-#include "../../../inc/MarlinConfig.h"
 
 #if BOTH(MELODY, SPEAKER)
   #include "melody_player.h"

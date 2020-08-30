@@ -22,13 +22,9 @@
 
 #pragma once
 
-#include "../../../inc/MarlinConfig.h"
-
 #if BOTH(MELODY, SPEAKER)
 #include "../../libs/buzzer.h"
-  #include "song.h"
-  // change this to whichever pin you want to use
-  int buzzer2 = BEEPER_PIN;
+#include "song.h"
   // this restructures the timeing to follow standard music beats 
   // closer to how MIDI players works 
   // change this to make the song slower or faster
@@ -42,11 +38,12 @@
   // this calculates the duration of a whole note in ms (60s/tempo)*4 beats
   int wholenote = (60000 * 4) / tempo;
 
-  int divider = 0, noteDuration = 0, thisNote ;;
-       // we only play the note for 90% of the duration, leaving 10% as a pause
-  void tone2(const pin_t _pin, const uint32_t divider = 0, const uint32_t noteDuration = 0){};
-  void delay2(const uint32_t noteDuration);
-  void Melody() {
+  int divider = 0, noteDuration = 0, thisNote, music_maker = BEEPER_PIN, frequency = 0 ;;;
+      
+   // we only play the note for 90% of the duration, leaving 10% as a pause
+  //void tone2(const uint16_t music_maker, const uint16_t thisNote, const uint16_t duration);
+  void delay(const uint16_t noteDuration =0 );
+  void Melodysetup() {
     // iterate over the notes of the melody.
     // Remember, the array is twice the number of notes (notes + durations)
     for (int thisNote = 0; 
@@ -65,10 +62,11 @@
         noteDuration *= 1.5; // increases the duration in half for dotted notes
       }
        // we only play the note for 90% of the duration, leaving 10% as a pause
-     //tone2(buzzer2, pgm_read_word_near(melody+thisNote ), noteDuration * 0.9);
+        frequency = pgm_read_word_near(melody+thisNote);
+      tone(music_maker,frequency , noteDuration * 0.9);
 
       // Wait for the specief duration before playing the next note.
-     delay2(noteDuration);
+      delay(noteDuration);
 
 
     }
