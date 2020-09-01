@@ -20,7 +20,7 @@
  *
  */
 #pragma once
-
+#include "src/inc/MarlinConfig.h"
 
 #if BOTH(MELODY, SPEAKER)
  

@@ -27,7 +27,7 @@
 #include "../gcode.h"
 #include "../../lcd/ultralcd.h" // i2c-based BUZZ
 #include "../../libs/buzzer.h"  // Buzzer, if possible
-#include "../../feature/melody/song.h" 
+#include "../../../song.h" 
 
 /**
 * M330: Play the song.h
