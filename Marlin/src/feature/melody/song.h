@@ -23,9 +23,8 @@
 
 
 #if BOTH(MELODY, SPEAKER)
-  #include "melody_player.h"
-
-  // The musical notes defined by the frequency for the speaker to play that note
+ 
+   // The musical notes defined by the frequency for the speaker to play that note
   #define NOTE_B0  31
   #define NOTE_C1  33
   #define NOTE_CS1 35

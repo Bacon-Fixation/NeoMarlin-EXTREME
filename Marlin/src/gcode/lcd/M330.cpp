@@ -27,7 +27,6 @@
 #include "../gcode.h"
 #include "../../lcd/ultralcd.h" // i2c-based BUZZ
 #include "../../libs/buzzer.h"  // Buzzer, if possible
-#include "../../feature/melody/melody_player.h" 
 #include "../../feature/melody/song.h" 
 
 /**
@@ -35,6 +34,22 @@
 */
 
 void GcodeSuite::M330() {
+
+  // this restructures the timeing to follow standard music beats 
+  // closer to how MIDI players works 
+  // change this to make the song slower or faster
+  static int tempo = 144;
+
+
+  // sizeof gives the number of bytes, each int value is composed of two bytes (16 bits)
+  // there are two values per note (pitch and duration), so for each note there are four bytes
+  int notes = sizeof(melody) / sizeof(melody[0]) / 2;
+
+  // this calculates the duration of a whole note in ms (60s/tempo)*4 beats
+  int wholenote = (60000 * 4) / tempo;
+
+  int divider = 0, noteDuration = 0, music_maker = BEEPER_PIN, frequency = 0 ;;;
+      
 
     // iterate over the notes of the melody.
     // Remember, the array is twice the number of notes (notes + durations)
@@ -66,6 +81,11 @@ void GcodeSuite::M330() {
  // BUZZ(noteDuration, frequency);
 
 }
+
+  void end_loop() {
+    // no need to repeat the melody.
+  }
+
 
 #endif // MELODY
 
