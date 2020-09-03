@@ -101,7 +101,7 @@ public:
 
   static inline void set_brightness(const uint8_t b) {
     adaneo1.setBrightness(b);
-    TERN_(CONJOINED_NEOPIXEL, adaneo2.setBrightness(b));
+    TERN_(CONJOINED_NEOPIXEL,,adaneo2.setBrightness(b));
   }
 
   static inline void show() {
@@ -110,7 +110,7 @@ public:
       #if CONJOINED_NEOPIXEL
         adaneo2.show();
       #else
-        TERN_(NEOPIXEL2_SEPARATE,adaneo1.setPin(NEOPIXEL2_PIN));
+        TERN_(NEOPIXEL2_SEPARATE, adaneo1.setPin(NEOPIXEL2_PIN));
         adaneo1.show();
         adaneo1.setPin(NEOPIXEL_PIN);
       #endif
