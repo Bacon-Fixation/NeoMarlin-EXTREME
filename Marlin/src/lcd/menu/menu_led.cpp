@@ -86,6 +86,14 @@
       #if ENABLED(NEOPIXEL_LED)
         EDIT_ITEM(uint8, MSG_LED_BRIGHTNESS, &leds.color.i, 0, 255, leds.update, true);
       #endif
+      #if ENABLED(NEOPIXEL2_SEPARATE)
+        BACK_ITEM(MSG_NEO2_CONTROL);
+        EDIT_ITEM(uint8, MSG_INTENSITY_R, &leds2.color.r, 0, 255, leds2.update, true);
+        EDIT_ITEM(uint8, MSG_INTENSITY_G, &leds2.color.g, 0, 255, leds2.update, true);
+        EDIT_ITEM(uint8, MSG_INTENSITY_B, &leds2.color.b, 0, 255, leds2.update, true);
+        EDIT_ITEM(uint8, MSG_INTENSITY_W, &leds2.color.w, 0, 255, leds2.update, true);
+        EDIT_ITEM(uint8, MSG_NEO2_BRIGHTNESS, &leds2.color.i, 0, 255, leds2.update, true);
+      #endif
     #endif
     END_MENU();
   }
@@ -113,8 +121,14 @@ void menu_led() {
     bool led_on = leds.lights_on;
     EDIT_ITEM(bool, MSG_LEDS, &led_on, leds.toggle);
     ACTION_ITEM(MSG_SET_LEDS_DEFAULT, leds.set_default);
+    EDIT_ITEM(bool, MSG_LEDS2, &led_on, leds2.toggle);
+    ACTION_ITEM(MSG_SET_NEO2_DEFAULT, leds2.set_default);
+    
     #if ENABLED(LED_COLOR_PRESETS)
       SUBMENU(MSG_LED_PRESETS, menu_led_presets);
+    #endif
+    #if ENABLED(NEO2_COLOR_PRESETS)
+      SUBMENU(MSG_NEO2_PRESETS, menu_leds2_presets);
     #endif
     SUBMENU(MSG_CUSTOM_LEDS, menu_led_custom);
   #endif
