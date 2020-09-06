@@ -142,10 +142,6 @@ void LEDLights::set_color(const LEDColor &incol
   void LEDLights::toggle() { if (lights_on) set_off(); else update(); }
 #endif
 
-#if BOTH(NEOPIXEL2_SEPARATE,LED_CONTROL_MENU)
-  void LEDLights2::toggle() { if (lights_on) set_off(); else update(); }
-#endif
-
 #ifdef LED_BACKLIGHT_TIMEOUT
 
   millis_t LEDLights::led_off_time; // = 0
@@ -161,7 +157,7 @@ void LEDLights::set_color(const LEDColor &incol
 #endif
 
 #if ENABLED(NEOPIXEL2_SEPARATE)
-
+ 
   #if ENABLED(NEO2_COLOR_PRESETS)
     const LEDColor LEDLights2::defaultLEDColor = MakeLEDColor(
       NEO2_USER_PRESET_RED, NEO2_USER_PRESET_GREEN, NEO2_USER_PRESET_BLUE,
@@ -188,6 +184,10 @@ void LEDLights::set_color(const LEDColor &incol
     neo2.set_brightness(incol.i);
     neo2.set_color(neocolor);
   }
+    
+  #if ENABLED(LED_CONTROL_MENU)
+    void LEDLights2::toggle() { if (lights_on) set_off(); else update(); }
+  #endif
 
 #endif  // NEOPIXEL2_SEPARATE
 
