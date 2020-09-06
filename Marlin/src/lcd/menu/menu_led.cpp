@@ -61,7 +61,7 @@
       #if LCD_HEIGHT > 2
         STATIC_ITEM(MSG_NEO2_PRESETS, SS_DEFAULT|SS_INVERT);
       #endif
-      BACK_ITEM(MSG_NEO2_CONTROL);
+      BACK_ITEM(MSG_LED_CONTROL);
       ACTION_ITEM(MSG_SET_NEO2_WHITE,  leds2.set_white);
       ACTION_ITEM(MSG_SET_NEO2_RED,    leds2.set_red);
       ACTION_ITEM(MSG_SET_NEO2_ORANGE, leds2.set_orange);
@@ -87,7 +87,7 @@
         EDIT_ITEM(uint8, MSG_LED_BRIGHTNESS, &leds.color.i, 0, 255, leds.update, true);
       #endif
       #if ENABLED(NEOPIXEL2_SEPARATE)
-        BACK_ITEM(MSG_NEO2_CONTROL);
+        STATIC_ITEM(MSG_LED_CHANNEL2, SS_DEFAULT|SS_INVERT);
         EDIT_ITEM(uint8, MSG_INTENSITY_R, &leds2.color.r, 0, 255, leds2.update, true);
         EDIT_ITEM(uint8, MSG_INTENSITY_G, &leds2.color.g, 0, 255, leds2.update, true);
         EDIT_ITEM(uint8, MSG_INTENSITY_B, &leds2.color.b, 0, 255, leds2.update, true);

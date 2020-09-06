@@ -211,11 +211,8 @@ namespace Language_en {
   PROGMEM Language_Str MSG_UBL_7_SAVE_MESH                 = _UxGT("7. Save Bed Mesh");
 
   PROGMEM Language_Str MSG_LED_CONTROL                     = _UxGT("LED Control");
-  PROGMEM Language_Str MSG_NEO2_CONTROL                    = _UxGT("NEO2 Control");
   PROGMEM Language_Str MSG_LEDS                            = _UxGT("Lights");
-  PROGMEM Language_Str MSG_LEDS2                           = _UxGT("Neo2 Lights");
   PROGMEM Language_Str MSG_LED_PRESETS                     = _UxGT("Light Presets");
-  PROGMEM Language_Str MSG_NEO2_PRESETS                    = _UxGT("NEO2 Presets");
   PROGMEM Language_Str MSG_SET_LEDS_RED                    = _UxGT("Red");
   PROGMEM Language_Str MSG_SET_LEDS_ORANGE                 = _UxGT("Orange");
   PROGMEM Language_Str MSG_SET_LEDS_YELLOW                 = _UxGT("Yellow");
@@ -225,7 +222,9 @@ namespace Language_en {
   PROGMEM Language_Str MSG_SET_LEDS_VIOLET                 = _UxGT("Violet");
   PROGMEM Language_Str MSG_SET_LEDS_WHITE                  = _UxGT("White");
   PROGMEM Language_Str MSG_SET_LEDS_DEFAULT                = _UxGT("Default");
-
+  PROGMEM Language_Str MSG_LED_CHANNEL2                    = _UxGT("Channel 2");
+  PROGMEM Language_Str MSG_LEDS2                           = _UxGT("Lights #2");
+  PROGMEM Language_Str MSG_NEO2_PRESETS                    = _UxGT("Light #2 Presets");
   PROGMEM Language_Str MSG_SET_NEO2_RED                    = _UxGT("Red");
   PROGMEM Language_Str MSG_SET_NEO2_ORANGE                 = _UxGT("Orange");
   PROGMEM Language_Str MSG_SET_NEO2_YELLOW                 = _UxGT("Yellow");
@@ -235,14 +234,14 @@ namespace Language_en {
   PROGMEM Language_Str MSG_SET_NEO2_VIOLET                 = _UxGT("Violet");
   PROGMEM Language_Str MSG_SET_NEO2_WHITE                  = _UxGT("White");
   PROGMEM Language_Str MSG_SET_NEO2_DEFAULT                = _UxGT("Default");
+  PROGMEM Language_Str MSG_NEO2_BRIGHTNESS                 = _UxGT("Brightness");
   PROGMEM Language_Str MSG_CUSTOM_LEDS                     = _UxGT("Custom Lights");
   PROGMEM Language_Str MSG_INTENSITY_R                     = _UxGT("Red Intensity");
   PROGMEM Language_Str MSG_INTENSITY_G                     = _UxGT("Green Intensity");
   PROGMEM Language_Str MSG_INTENSITY_B                     = _UxGT("Blue Intensity");
   PROGMEM Language_Str MSG_INTENSITY_W                     = _UxGT("White Intensity");
   PROGMEM Language_Str MSG_LED_BRIGHTNESS                  = _UxGT("Brightness");
-  PROGMEM Language_Str MSG_NEO2_BRIGHTNESS                 = _UxGT("Brightness");
-
+  
   PROGMEM Language_Str MSG_MOVING                          = _UxGT("Moving...");
   PROGMEM Language_Str MSG_FREE_XY                         = _UxGT("Free XY");
   PROGMEM Language_Str MSG_MOVE_X                          = _UxGT("Move X");
