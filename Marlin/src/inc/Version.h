@@ -25,7 +25,7 @@
  * Release version. Leave the Marlin version or apply a custom scheme.
  */
 #ifndef SHORT_BUILD_VERSION
-  #define SHORT_BUILD_VERSION "Sean Station-2.0.6.2"
+  #define SHORT_BUILD_VERSION "Sean Station V2.0"
 #endif
 
 /**
@@ -97,7 +97,7 @@
    * documentation about a specific Marlin release. Displayed in the Info Menu.
    */
 #ifndef WEBSITE_URL
-  #define WEBSITE_URL "https://marlinfw.org"
+  #define WEBSITE_URL "Powered By Marlin"
 #endif
 
 /**
