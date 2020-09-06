@@ -119,4 +119,4 @@
 #else
   #define  USB_DEVICE_PRODUCT_NAME        "Sean Station"
 #endif
-#define  USB_DEVICE_SERIAL_NAME           "123985739853"
+#define  USB_DEVICE_SERIAL_NAME           "8675309 I've got your number on the wall"
