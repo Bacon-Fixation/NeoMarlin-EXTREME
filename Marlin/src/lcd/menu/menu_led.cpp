@@ -121,9 +121,11 @@ void menu_led() {
     bool led_on = leds.lights_on;
     EDIT_ITEM(bool, MSG_LEDS, &led_on, leds.toggle);
     ACTION_ITEM(MSG_SET_LEDS_DEFAULT, leds.set_default);
-    EDIT_ITEM(bool, MSG_LEDS2, &led_on, leds2.toggle);
-    ACTION_ITEM(MSG_SET_NEO2_DEFAULT, leds2.set_default);
-    
+    #if ENABLED(NEOPIXEL2_SEPARATE)
+      bool led2_on = leds2.lights_on;
+      EDIT_ITEM(bool, MSG_LEDS2, &led2_on, leds2.toggle);
+      ACTION_ITEM(MSG_SET_NEO2_DEFAULT, leds2.set_default);
+    #endif
     #if ENABLED(LED_COLOR_PRESETS)
       SUBMENU(MSG_LED_PRESETS, menu_led_presets);
     #endif

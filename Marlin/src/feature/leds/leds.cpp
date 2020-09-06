@@ -142,6 +142,10 @@ void LEDLights::set_color(const LEDColor &incol
   void LEDLights::toggle() { if (lights_on) set_off(); else update(); }
 #endif
 
+#if BOTH(NEOPIXEL2_SEPARATE,LED_CONTROL_MENU)
+  void LEDLights2::toggle() { if (lights_on) set_off(); else update(); }
+#endif
+
 #ifdef LED_BACKLIGHT_TIMEOUT
 
   millis_t LEDLights::led_off_time; // = 0
