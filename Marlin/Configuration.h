@@ -1162,7 +1162,7 @@
 #define DISABLE_Z false
 
 // Turn off the display blinking that warns about possible accuracy reduction
-//#define DISABLE_REDUCED_ACCURACY_WARNING
+#define DISABLE_REDUCED_ACCURACY_WARNING
 
 // @section extruder
 
