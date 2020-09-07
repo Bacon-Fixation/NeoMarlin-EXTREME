@@ -25,7 +25,7 @@
  * Release version. Leave the Marlin version or apply a custom scheme.
  */
 #ifndef SHORT_BUILD_VERSION
-  #define SHORT_BUILD_VERSION "Sean Station V2.0"
+  #define SHORT_BUILD_VERSION "bugfix-2.0.x"
 #endif
 
 /**
@@ -33,7 +33,7 @@
  * vendor name, download location, GitHub account, etc.
  */
 #ifndef DETAILED_BUILD_VERSION
-  #define DETAILED_BUILD_VERSION "Marlin 2.0.6.2"
+  #define DETAILED_BUILD_VERSION SHORT_BUILD_VERSION
 #endif
 
 /**
@@ -73,7 +73,7 @@
  * Define a generic printer name to be output to the LCD after booting Marlin.
  */
 #ifndef MACHINE_NAME
-  #define MACHINE_NAME "Delta"
+  #define MACHINE_NAME "3D Printer"
 #endif
 
 /**
@@ -82,7 +82,7 @@
  * providing the source code to your customers.)
  */
 #ifndef SOURCE_CODE_URL
-  #define SOURCE_CODE_URL "https://github.com/Bacon-Fixation/NeoMarlin-EXTREME/tree/Trut-config"
+  #define SOURCE_CODE_URL "https://github.com/MarlinFirmware/Marlin"
 #endif
 
 /**
@@ -97,7 +97,7 @@
    * documentation about a specific Marlin release. Displayed in the Info Menu.
    */
 #ifndef WEBSITE_URL
-  #define WEBSITE_URL "Powered By Marlin"
+  #define WEBSITE_URL "https://marlinfw.org"
 #endif
 
 /**
@@ -112,11 +112,11 @@
 #endif
 //! USB Device string definitions (Optional)
 #ifndef USB_DEVICE_MANUFACTURE_NAME
-  #define  USB_DEVICE_MANUFACTURE_NAME    "Bacon Services LLC"
+  #define  USB_DEVICE_MANUFACTURE_NAME    WEBSITE_URL
 #endif
 #ifdef CUSTOM_MACHINE_NAME
   #define  USB_DEVICE_PRODUCT_NAME        CUSTOM_MACHINE_NAME
 #else
-  #define  USB_DEVICE_PRODUCT_NAME        "Sean Station"
+  #define  USB_DEVICE_PRODUCT_NAME        MACHINE_NAME
 #endif
-#define  USB_DEVICE_SERIAL_NAME           "8675309 I've got your number on the wall"
+#define  USB_DEVICE_SERIAL_NAME           "123985739853"
