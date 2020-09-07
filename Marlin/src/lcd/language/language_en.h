@@ -211,7 +211,6 @@ namespace Language_en {
   PROGMEM Language_Str MSG_UBL_7_SAVE_MESH                 = _UxGT("7. Save Bed Mesh");
 
   PROGMEM Language_Str MSG_LED_CONTROL                     = _UxGT("LED Control");
-  PROGMEM Language_Str MSG_NEO2_CONTROL                    = _UxGT("NEO2 Control");
   PROGMEM Language_Str MSG_LEDS                            = _UxGT("Lights");
   PROGMEM Language_Str MSG_LED_PRESETS                     = _UxGT("Light Presets");
   PROGMEM Language_Str MSG_SET_LEDS_RED                    = _UxGT("Red");
@@ -223,16 +222,10 @@ namespace Language_en {
   PROGMEM Language_Str MSG_SET_LEDS_VIOLET                 = _UxGT("Violet");
   PROGMEM Language_Str MSG_SET_LEDS_WHITE                  = _UxGT("White");
   PROGMEM Language_Str MSG_SET_LEDS_DEFAULT                = _UxGT("Default");
-  PROGMEM Language_Str MSG_NEO2_PRESETS                    = _UxGT("NEO2 Presets");
-  PROGMEM Language_Str MSG_SET_NEO2_RED                    = _UxGT("Red");
-  PROGMEM Language_Str MSG_SET_NEO2_ORANGE                 = _UxGT("Orange");
-  PROGMEM Language_Str MSG_SET_NEO2_YELLOW                 = _UxGT("Yellow");
-  PROGMEM Language_Str MSG_SET_NEO2_GREEN                  = _UxGT("Green");
-  PROGMEM Language_Str MSG_SET_NEO2_BLUE                   = _UxGT("Blue");
-  PROGMEM Language_Str MSG_SET_NEO2_INDIGO                 = _UxGT("Indigo");
-  PROGMEM Language_Str MSG_SET_NEO2_VIOLET                 = _UxGT("Violet");
-  PROGMEM Language_Str MSG_SET_NEO2_WHITE                  = _UxGT("White");
-  PROGMEM Language_Str MSG_SET_NEO2_DEFAULT                = _UxGT("Default");
+  PROGMEM Language_Str MSG_LED_CHANNEL_N                   = _UxGT("Channel =");
+  PROGMEM Language_Str MSG_LEDS2                           = _UxGT("Lights #2");
+  PROGMEM Language_Str MSG_NEO2_PRESETS                    = _UxGT("Light #2 Presets");
+  PROGMEM Language_Str MSG_NEO2_BRIGHTNESS                 = _UxGT("Brightness");
   PROGMEM Language_Str MSG_CUSTOM_LEDS                     = _UxGT("Custom Lights");
   PROGMEM Language_Str MSG_INTENSITY_R                     = _UxGT("Red Intensity");
   PROGMEM Language_Str MSG_INTENSITY_G                     = _UxGT("Green Intensity");
@@ -458,8 +451,6 @@ namespace Language_en {
   PROGMEM Language_Str MSG_BABYSTEP_TOTAL                  = _UxGT("Total");
   PROGMEM Language_Str MSG_ENDSTOP_ABORT                   = _UxGT("Endstop Abort");
   PROGMEM Language_Str MSG_HEATING_FAILED_LCD              = _UxGT("Heating Failed");
-  PROGMEM Language_Str MSG_HEATING_FAILED_LCD_BED          = _UxGT("Bed Heating Failed");
-  PROGMEM Language_Str MSG_HEATING_FAILED_LCD_CHAMBER      = _UxGT("Chamber Heating Fail");
   PROGMEM Language_Str MSG_ERR_REDUNDANT_TEMP              = _UxGT("Err: REDUNDANT TEMP");
   PROGMEM Language_Str MSG_THERMAL_RUNAWAY                 = _UxGT("THERMAL RUNAWAY");
   PROGMEM Language_Str MSG_THERMAL_RUNAWAY_BED             = _UxGT("BED THERMAL RUNAWAY");
