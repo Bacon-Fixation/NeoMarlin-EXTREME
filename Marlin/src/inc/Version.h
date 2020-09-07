@@ -112,7 +112,7 @@
 #endif
 //! USB Device string definitions (Optional)
 #ifndef USB_DEVICE_MANUFACTURE_NAME
-  #define  USB_DEVICE_MANUFACTURE_NAME    "https://github.com/Bacon-Fixation/NeoMarlin-EXTREME/tree/Trut-config"
+  #define  USB_DEVICE_MANUFACTURE_NAME    "Bacon Services LLC"
 #endif
 #ifdef CUSTOM_MACHINE_NAME
   #define  USB_DEVICE_PRODUCT_NAME        CUSTOM_MACHINE_NAME
