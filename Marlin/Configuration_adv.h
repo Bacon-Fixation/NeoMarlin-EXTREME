@@ -3511,12 +3511,6 @@
   //#define SERVICE_INTERVAL_3    1 // print hours
 #endif
 
-/**
- * Startup Chime/Tune 
- */
-#if BOTH(STARTUP_CHIME, SPEAKER)
-#define CHIME "M300 S440 P200\nM300 S660 P250\nM300 S880 P300\n"
-#endif
 // @section develop
 
 //
