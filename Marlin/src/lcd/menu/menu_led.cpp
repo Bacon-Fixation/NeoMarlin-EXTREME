@@ -91,7 +91,7 @@
       #endif
     #endif
     #if ENABLED(NEOPIXEL2_SEPARATE)
-      STATIC_ITEM_N(MSG_LED_CHANNEL_N, 2, SS_DEFAULT|SS_INVERT);
+      STATIC_ITEM_N(MSG_LED_CHANNEL_N, ++, SS_DEFAULT|SS_INVERT);
       EDIT_ITEM(uint8, MSG_INTENSITY_R, &leds2.color.r, 0, 255, leds2.update, true);
       EDIT_ITEM(uint8, MSG_INTENSITY_G, &leds2.color.g, 0, 255, leds2.update, true);
       EDIT_ITEM(uint8, MSG_INTENSITY_B, &leds2.color.b, 0, 255, leds2.update, true);
