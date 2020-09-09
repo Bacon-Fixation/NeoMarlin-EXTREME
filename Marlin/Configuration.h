@@ -1899,7 +1899,7 @@
 //
 // If you have a speaker that can produce tones, enable it here to play a melody at startup via the M300 command.
 // 
-#define STARTUP_MELODY
+//#define STARTUP_MELODY
 #if BOTH(STARTUP_MELODY, SPEAKER)
   #define MELODY "M300 S440 P200\nM300 S660 P250\nM300 S880 P300\n"
 #endif
