@@ -3171,7 +3171,7 @@
  *
  * Execute certain G-code commands immediately after power-on.
  */
-#define STARTUP_COMMANDS "M300 S440 P200\nM300 S660 P250\nM300 S880 P300\n"
+//#define STARTUP_COMMANDS "M300 S440 P200\nM300 S660 P250\nM300 S880 P300\n"
 
 /**
  * G-code Macros
